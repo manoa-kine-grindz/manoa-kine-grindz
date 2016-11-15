@@ -1,5 +1,6 @@
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { BlazeLayout } from 'meteor/kadira:blaze-layout';
+import { GoogleMaps } from 'meteor/dburles:google-maps';
 
 FlowRouter.route('/', {
   name: 'Home_Page',
@@ -26,6 +27,13 @@ FlowRouter.route('/{{user}}', {
   name: 'Profile_Page',
   action() {
     BlazeLayout.render('App_Body', { main: 'Profile_Page' });
+  },
+});
+
+FlowRouter.route('/map', {
+  name: 'Map',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Map' });
   },
 });
 

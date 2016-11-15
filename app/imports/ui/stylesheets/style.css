@@ -1,3 +1,13 @@
 body {
-  padding-top: 100px;  /* Move body of page below navbar. */
+  padding-top: 200px;  /* Move body of page below navbar. */
+  background-color: green;
+}
+
+div.ui.top.fixed.borderless.inverted.menu {
+  font-family: 'Oxygen', sans-serif;
+  background-color: silver;
+}
+
+div.ui.container>a.item>h1, div.text {
+  color: black;
 }

@@ -1,9 +1,17 @@
 <template name="Home_Page">
   <div class="ui text container">
 
-    <p>Eh no kine stay hungry ah</p>
+    <p>Eh no stay hungry ah, Manoa Kine Grindz can find you whatevah you like but remember that no one likes a picky eater.</p>
     {{#if currentUser}}
-    <p>Currently logged in user: {{ user }}</p>
+    <p><h2>Today's Meals:</h2></p>
+    <div class="sixteen wide column">
+      <div class="six wide column" style="float: left; padding-right: 40px;">
+        <h3>Dorms</h3>
+      </div>
+      <div class="six wide column right">
+        <h3>Campus Center</h3>
+      </div>
+    </div>
     {{/if}}
   </div>
 </template>
