@@ -18,14 +18,14 @@ FlowRouter.route('/menu', {
 FlowRouter.route('/calendar', {
   name: 'Calendar',
   action() {
-    BlazeLayout.render('App_Body', { main: 'Menu' });
+    BlazeLayout.render('App_Body', { main: 'Calendar' });
   },
 });
 
 FlowRouter.route('/{{user}}', {
-  name: 'Profile',
+  name: 'Profile_Page',
   action() {
-    BlazeLayout.render('App_Body', { main: 'Profile' });
+    BlazeLayout.render('App_Body', { main: 'Profile_Page' });
   },
 });
 
