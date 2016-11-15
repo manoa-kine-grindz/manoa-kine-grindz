@@ -8,6 +8,27 @@ FlowRouter.route('/', {
   },
 });
 
+FlowRouter.route('/menu', {
+  name: 'Menu',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Menu' });
+  },
+});
+
+FlowRouter.route('/calendar', {
+  name: 'Calendar',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Menu' });
+  },
+});
+
+FlowRouter.route('/{{user}}', {
+  name: 'Profile',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Profile' });
+  },
+});
+
 
 FlowRouter.notFound = {
   action() {
