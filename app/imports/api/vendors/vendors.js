@@ -18,11 +18,7 @@ export const VendorSchema = new SimpleSchema({
     },
   },
   cuisine: {
-<<<<<<< HEAD
     label: 'Cuisine',
-=======
-    label: 'cuisine',
->>>>>>> refs/remotes/origin/master
     type: String,
     optional: false,
     max: 15,
