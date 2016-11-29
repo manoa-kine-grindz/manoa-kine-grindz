@@ -6,3 +6,7 @@ import './calendar.html';
 import './calendar.js';
 import './profile-page.html';
 import './profile-page.js';
+import './map.html';
+import './map.js';
+import './tos.html';
+import './tos.js';

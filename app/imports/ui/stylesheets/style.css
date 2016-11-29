@@ -3,6 +3,16 @@ body {
   background-color: green;
 }
 
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+.map-container {
+  width: 100%;
+  width: 100%;
+}
+
 div.ui.top.fixed.borderless.inverted.menu {
   font-family: 'Oxygen', sans-serif;
   background-color: silver;

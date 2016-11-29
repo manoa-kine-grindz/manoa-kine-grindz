@@ -36,6 +36,13 @@ FlowRouter.route('/map', {
   },
 });
 
+FlowRouter.route('/tos', {
+  name: 'ToS',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'ToS' });
+  },
+});
+
 
 FlowRouter.notFound = {
   action() {

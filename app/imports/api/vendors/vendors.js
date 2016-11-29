@@ -18,13 +18,23 @@ export const VendorSchema = new SimpleSchema({
     },
   },
   cuisine: {
-    label: 'Name',
+    label: 'Cuisine',
     type: String,
     optional: false,
     max: 15,
     autoform: {
-      group: 'Vendors',
+      group: 'Cuisine',
       placeholder: 'What kine food they sell',
+    },
+  },
+  location: {
+    label: 'Location',
+    type: String,
+    optional: false,
+    max: 20,
+    autoform: {
+      group: 'Location',
+      placeholder: 'Whea they at',
     },
   }
 });
