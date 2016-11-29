@@ -6,6 +6,10 @@ Template.App_Body.onCreated(function appBodyOnCreated() {
 
 Template.App_Body.helpers({
   // placeholder: if you display dynamic data in your layout, you will put your template helpers here.
+
+  cuisineList: function() {
+    return Cuisine.find();
+  }
 });
 
 Template.App_Body.events({

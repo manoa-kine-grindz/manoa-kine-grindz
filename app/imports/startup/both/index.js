@@ -1,1 +1,0 @@
-import { GoogleMaps } from 'meteor/dburles:google-maps';

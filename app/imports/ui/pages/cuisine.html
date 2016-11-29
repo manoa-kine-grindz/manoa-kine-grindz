@@ -1,0 +1,24 @@
+<template name="Cuisine">
+  <div class="ui text container">
+      <div class="medium well">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Cuisine</th>
+              <th>Flavor</th>
+              <th>Vendors</th>
+            </tr>
+          </thead>
+          <tbody>
+          {{#each cuisineList}}
+            <tr>
+              <td>{{name}}</td>
+              <td>{{flavor}}</td>
+              <td>{{vendors}}</td>
+            </tr>
+          {{/each}}
+          </tbody>
+        </table>
+      </div>
+  </div>
+</template>
