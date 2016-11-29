@@ -1,0 +1,30 @@
+<template name="Menu">
+  <div class="ui container">
+
+    {{#if Template.subscriptionsReady}}
+    <table style="margin-top: 20px" class="ui celled table">
+      <thead>
+      <tr>
+        <th>Restaurant</th>
+        <th>Menu Item</th>
+        <th>Cuisine</th>
+        <th>Price</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      {{#each contact in menuList}}
+      <tr>
+        <td>{{menu.Restaurant}}</td>
+        <td>{{menu.Item}}</td>
+        <td>{{menu.Cuisine}}</td>
+        <td>{{menu.Price}}</td>
+      </tr>
+      {{/each}}
+      </tbody>
+    </table>
+    {{else}}
+    {{> Loading}}
+    {{/if}}
+  </div>
+</template>

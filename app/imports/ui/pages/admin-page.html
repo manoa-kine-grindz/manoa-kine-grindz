@@ -1,0 +1,51 @@
+<template name="Admin">
+  <div style="margin-top: 20px" class="ui container">
+    <form class="ui form contact-data-form {{ errorClass }}">
+      <div class="field">
+        <label>Restaurant</label>
+        <div class="twelve wide field">
+          <input type="text" name="restaurant" id="restaurant" placeholder="Restaurant Name">
+          {{#if displayFieldError 'restaurant' }}
+          <div class="ui error message">
+            <p>You must specify your restaurant name.</p>
+          </div>
+          {{/if}}
+        </div>
+        <div class="field">
+          <input type="text" name="item" id="item" placeholder="Menu Item">
+          {{#if displayFieldError 'item' }}
+          <div class="ui error message">
+            <p>You must specify the name of your menu item.</p>
+          </div>
+          {{/if}}
+        </div>
+      </div>
+      <div class="field">
+        <label>Cuisine</label>
+        <div class="fields">
+          <div class="field">
+            <input type="text" name="cuisine" id="cuisine" placeholder="Type of Cuisine">
+            {{#if displayFieldError 'cuisine' }}
+            <div class="ui error message">
+              <p>You must specify what type of cuisine this menu item is.</p>
+            </div>
+            {{/if}}
+          </div>
+        </div>
+      </div>
+      <div class="field">
+        <label>Price</label>
+        <div class="field">
+          <input type="number" name="price" id="price" placeholder="$00.00">
+          {{#if displayFieldError 'price' }}
+          <div class="ui error message">
+            <p>You must specify the price of this menu item.</p>
+          </div>
+          {{/if}}
+        </div>
+      </div>
+      <button class="ui button" type="submit">Submit</button>
+    </form>
+  </div>
+
+</template>
