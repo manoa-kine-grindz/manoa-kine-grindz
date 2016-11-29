@@ -1,6 +1,5 @@
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { BlazeLayout } from 'meteor/kadira:blaze-layout';
-import { GoogleMaps } from 'meteor/dburles:google-maps';
 
 FlowRouter.route('/', {
   name: 'Home_Page',
@@ -9,10 +8,10 @@ FlowRouter.route('/', {
   },
 });
 
-FlowRouter.route('/menu', {
-  name: 'Menu',
+FlowRouter.route('/cuisine', {
+  name: 'Cuisine',
   action() {
-    BlazeLayout.render('App_Body', { main: 'Menu' });
+    BlazeLayout.render('App_Body', { main: 'Cuisine' });
   },
 });
 
@@ -23,7 +22,7 @@ FlowRouter.route('/calendar', {
   },
 });
 
-FlowRouter.route('/{{user}}', {
+FlowRouter.route('/{user}', {
   name: 'Profile_Page',
   action() {
     BlazeLayout.render('App_Body', { main: 'Profile_Page' });
@@ -37,6 +36,13 @@ FlowRouter.route('/map', {
   },
 });
 
+FlowRouter.route('/tos', {
+  name: 'ToS',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'ToS' });
+  },
+});
+
 FlowRouter.route('/search-for', {
   name: 'Search_For_Page',
   action() {
@@ -44,6 +50,12 @@ FlowRouter.route('/search-for', {
   },
 });
 
+FlowRouter.route('/edit-profile', {
+  name: 'Edit_Profile',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Edit_Profile' });
+  },
+});
 FlowRouter.notFound = {
   action() {
     BlazeLayout.render('App_Body', { main: 'App_Not_Found' });

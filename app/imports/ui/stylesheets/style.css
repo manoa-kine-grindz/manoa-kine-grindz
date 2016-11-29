@@ -3,6 +3,16 @@ body {
   background-color: green;
 }
 
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+.map-container {
+  width: 100%;
+  width: 100%;
+}
+
 div.ui.top.fixed.borderless.inverted.menu {
   font-family: 'Oxygen', sans-serif;
   background-color: silver;
@@ -10,4 +20,35 @@ div.ui.top.fixed.borderless.inverted.menu {
 
 div.ui.container>a.item>h1, div.text {
   color: white;
+}
+
+.table {
+  border: 5px solid grey;
+  width: 100%;
+  text-align: center;
+}
+
+th {
+  width: 20%;
+  height: 12px;
+  border-left: 4px solid grey;
+  border-bottom: 3px solid grey;
+}
+
+th>h3 {
+  font-size: 20px;
+}
+
+td {
+  width: 20%;
+  height: 20px;
+  border-left: 4px solid grey;
+  border-bottom: 3px solid grey;
+}
+
+button {
+  background-color: grey;
+  box-shadow: 1px 1px 2px 3px black;
+  margin: 4px 4px 4px 4px;
+  color: black;
 }

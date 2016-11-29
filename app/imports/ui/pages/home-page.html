@@ -4,14 +4,42 @@
     <p>Eh no stay hungry ah, Manoa Kine Grindz can find you whatevah you like but remember that no one likes a picky eater.</p>
     {{#if currentUser}}
     <p><h2>Today's Meals:</h2></p>
-    <div class="sixteen wide column">
-      <div class="six wide column" style="float: left; padding-right: 40px;">
-        <h3>Dorms</h3>
-      </div>
-      <div class="six wide column right">
-        <h3>Campus Center</h3>
-      </div>
-    </div>
+    <table class="table">
+      <thead>
+      <tr>
+        <th><h3>Dorms</h3></th>
+        <th><h3>Campus Center</h3></th>
+        <th><h3>Paradise Palms</h3></th>
+        <th><h3>Misc</h3></th>
+      </tr>
+      </thead>
+      <tbody>
+      {{#each vendorList}}
+      <tr>
+        <td class="Dorms">
+          {{#if atDorms}}
+          {{name}}
+          {{/if}}
+        </td>
+        <td class="Campus Center">
+          {{#if atCC}}
+          {{name}}
+          {{/if}}
+        </td>
+        <td class="Paradise Palms">
+          {{#if atPP}}
+          {{name}}
+          {{/if}}
+        </td>
+        <td class="Misc">
+          {{#if atMisc}}
+          {{name}}
+          {{/if}}
+        </td>
+      </tr>
+      {{/each}}
+      </tbody>
+    </table>
     {{/if}}
   </div>
 </template>
