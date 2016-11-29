@@ -1,0 +1,58 @@
+<template name="Search_For_Page">
+  <div class="ui container">
+    <h1 class="ui dividing header">Search for Vendors</h1>
+    <div class="ui huge form">
+      <div class="two fields">
+        <div class="field">
+          <div class="ui fluid category search">
+            <div class="ui icon input">
+              <input class="prompt" type="text" placeholder="Search by ingredients...">
+              <i class="search icon"></i>
+            </div>
+            <div class="results"></div>
+          </div>
+        </div>
+
+
+        <div class="field">
+          <div class="ui fluid category search">
+            <div class="ui icon input">
+              <input class="prompt" type="text" placeholder="Search by menu items...">
+              <i class="search icon"></i>
+            </div>
+            <div class="results"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1 class="ui dividing header">Vendors</h1>
+
+    <div style="margin-bottom: 20px" class="ui middle aligned centered grid text container">
+
+      {{#if Template.subscriptionsReady}}
+      <table style="margin-top: 20px" class="ui celled table">
+        <thead>
+        <tr>
+          <th>Name</th>
+          <th>Cuisine</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        {{#each vendor in vendorList}}
+        <tr>
+          <td>{{vendor.name}}</td>
+          <td>{{vendor.cuisine}}</td>
+        </tr>
+        {{/each}}
+        </tbody>
+      </table>
+      {{else}}
+      {{> Loading}}
+      {{/if}}
+
+
+
+    </div>
+  </div>
+</template>

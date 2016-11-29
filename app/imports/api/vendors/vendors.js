@@ -8,7 +8,7 @@ export const Vendors = new Mongo.Collection('Vendors');
 
 export const VendorSchema = new SimpleSchema({
   name: {
-    label: 'Name',
+    label: 'name',
     type: String,
     optional: false,
     max: 30,
@@ -18,7 +18,11 @@ export const VendorSchema = new SimpleSchema({
     },
   },
   cuisine: {
+<<<<<<< HEAD
     label: 'Cuisine',
+=======
+    label: 'cuisine',
+>>>>>>> refs/remotes/origin/master
     type: String,
     optional: false,
     max: 15,

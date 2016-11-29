@@ -36,6 +36,7 @@ FlowRouter.route('/map', {
   },
 });
 
+<<<<<<< HEAD
 FlowRouter.route('/tos', {
   name: 'ToS',
   action() {
@@ -43,6 +44,21 @@ FlowRouter.route('/tos', {
   },
 });
 
+=======
+FlowRouter.route('/search-for', {
+  name: 'Search_For_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Search_For_Page' });
+  },
+});
+
+FlowRouter.route('/edit-profile', {
+  name: 'Edit_Profile',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Edit_Profile' });
+  },
+});
+>>>>>>> refs/remotes/origin/master
 
 FlowRouter.notFound = {
   action() {
