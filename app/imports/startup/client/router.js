@@ -37,6 +37,12 @@ FlowRouter.route('/map', {
   },
 });
 
+FlowRouter.route('/search-for', {
+  name: 'Search_For_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Search_For_Page' });
+  },
+});
 
 FlowRouter.notFound = {
   action() {
