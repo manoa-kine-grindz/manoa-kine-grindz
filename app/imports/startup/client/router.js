@@ -44,6 +44,13 @@ FlowRouter.route('/search-for', {
   },
 });
 
+FlowRouter.route('/edit-profile', {
+  name: 'Edit_Profile',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Edit_Profile' });
+  },
+});
+
 FlowRouter.notFound = {
   action() {
     BlazeLayout.render('App_Body', { main: 'App_Not_Found' });
