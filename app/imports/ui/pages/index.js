@@ -7,3 +7,5 @@ import './calendar.js';
 
 import './search-for.html';
 import './search-for.js';
+import './edit-profile.html';
+import './edit-profile';
