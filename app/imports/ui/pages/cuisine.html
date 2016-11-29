@@ -1,12 +1,13 @@
 <template name="Cuisine">
   <div class="ui text container">
-      <div class="medium well">
+      <div class="well">
         <table class="table">
           <thead>
             <tr>
-              <th>Cuisine</th>
-              <th>Flavor</th>
-              <th>Vendors</th>
+              <th><h3>Cuisine</h3></th>
+              <th><h3>Flavor</h3></th>
+              <th><h3>Vendors</h3></th>
+              <th><h3>Location</h3></th>
             </tr>
           </thead>
           <tbody>
@@ -15,9 +16,21 @@
               <td>{{name}}</td>
               <td>{{flavor}}</td>
               <td>{{vendors}}</td>
+              <td>{{location}}</td>
             </tr>
           {{/each}}
           </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="4">Sort by:</td>
+            </tr>
+            <tr>
+              <td><button type="button" class="sortCuisine">Cuisine</button></td>
+              <td><button type="button" class="sortFlavor">Flavor</button></td>
+              <td><button type="button" class="sortVendor">Vendor</button></td>
+              <td><button type="button" class="sortLocation">Location</button></td>
+            </tr>
+          </tfoot>
         </table>
       </div>
   </div>

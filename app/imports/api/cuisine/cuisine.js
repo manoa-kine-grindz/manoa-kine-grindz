@@ -36,6 +36,16 @@ export const CuisineSchema = new SimpleSchema({
       group: 'Vendors',
       placeholder: 'Who selling it',
     },
+  },
+  location: {
+    label: 'Location',
+    type: String,
+    optional: false,
+    max: 25,
+    autoform: {
+      group: 'Location',
+      placeholder: 'Whea it at',
+    },
   }
 });
 
