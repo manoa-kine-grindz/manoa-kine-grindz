@@ -14,30 +14,30 @@
       </tr>
       </thead>
       <tbody>
-      {{#each vendorList}}
+
       <tr>
-        <td class="Dorms">
-          {{#if atDorms}}
-          {{name}}
-          {{/if}}
+        <td>
+          {{#each atDorms}}
+            {{cuisine}}<br>
+          {{/each}}
         </td>
-        <td class="Campus Center">
-          {{#if atCC}}
-          {{name}}
-          {{/if}}
+        <td>
+          {{#each atCC}}
+          {{cuisine}}<br>
+          {{/each}}
         </td>
-        <td class="Paradise Palms">
-          {{#if atPP}}
-          {{name}}
-          {{/if}}
+        <td>
+          {{#each atPP}}
+          {{cuisine}}<br>
+          {{/each}}
         </td>
-        <td class="Misc">
-          {{#if atMisc}}
-          {{name}}
-          {{/if}}
+        <td>
+          {{#each atMisc}}
+          {{cuisine}}<br>
+          {{/each}}
         </td>
       </tr>
-      {{/each}}
+
       </tbody>
     </table>
     {{/if}}

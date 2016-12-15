@@ -6,7 +6,7 @@ import { Cuisine } from '../../api/cuisine/cuisine.js';
 
 Template.Cuisine.helpers({
   cuisineList: function() {
-    return Cuisine.find();
+    return Cuisine.find({}, { sort: {cuisine: 1}});
   }
 });
 

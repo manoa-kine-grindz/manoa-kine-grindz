@@ -14,3 +14,5 @@ import './search-for.html';
 import './search-for.js';
 import './edit-profile.html';
 import './edit-profile';
+import '../../api/cuisine/cuisine.js';
+import '../../api/vendors/vendors.js';

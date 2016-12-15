@@ -21,7 +21,7 @@ export const CuisineSchema = new SimpleSchema({
     label: 'Flavor',
     type: String,
     optional: false,
-    max: 15,
+    max: 30,
     autoform: {
       group: 'Flavor',
       placeholder: 'What it taste like',

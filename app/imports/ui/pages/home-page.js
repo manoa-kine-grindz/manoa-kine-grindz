@@ -13,15 +13,19 @@ Template.Home_Page.helpers({
   },
 
   atDorms: function() {
-    return Vendors.find({location: "Dorms"}).fetch();
+    return Vendors.find({location: "Dorms"});
   },
   atCC: function() {
-    return Vendors.find({location: "Campus Center"}).fetch();
+    return Vendors.find({location: "Campus Center"});
   },
   atPP: function() {
-    return Vendors.find({location: "Paradise Palms"}).fetch();
+    return Vendors.find({location: "Paradise Palms"});
   },
   atMisc: function() {
-    return Vendors.find({location: "Misc"}).fetch();
+    return Vendors.find({}, {location: {'Dorms': false, 'Campus Center': false, 'Paradise Palms': false}});
+  },
+
+  vendorList: function() {
+    return Vendors.find();
   }
 });

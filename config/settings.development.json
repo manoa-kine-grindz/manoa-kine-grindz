@@ -16,5 +16,11 @@
     "johnson",
     "cmoore",
     "mahoe7"
-  ]
+  ],
+  "galaxy.meteor.com": {
+    "env": {
+      "MONGO_URL": "mongodb://mahoe7:gg5555@ds155087.mlab.com:55087/manoakinegrindz"
+    }
+  }
 }
+

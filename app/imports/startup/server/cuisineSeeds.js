@@ -7,7 +7,7 @@ var cuisineSeeds = [
   {name: "Local", flavor: "Savory", vendors: "L&L", location: "Paradise Palms"},
   {name: "Chinese", flavor: "Savory", vendors: "Panda Express", location: "Paradise Palms"},
   {name: "Chinese", flavor: "Savory", vendors: "Stir-Fresh", location: "Campus Center"},
-  {name: "Mexican", flavor: "Spicy", vendors: "Verde", location: "Saunders Hall"},
+  {name: "Mexican", flavor: "Spicy", vendors: "Gateway Dining", location: "Dorms"},
   {name: "Vietnamese", flavor: "Salty", vendors: "Bale", location: "Hemenway Hall"},
 ];
 

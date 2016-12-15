@@ -21,7 +21,7 @@ export const VendorSchema = new SimpleSchema({
     label: 'Cuisine',
     type: String,
     optional: false,
-    max: 15,
+    max: 90,
     autoform: {
       group: 'Cuisine',
       placeholder: 'What kine food they sell',

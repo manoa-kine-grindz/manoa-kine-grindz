@@ -18,6 +18,7 @@ Template.ToS.events({
       }
     };
     Meteor.loginWithCas(callback);
+    location.href="./";
     return false;
   },
 });

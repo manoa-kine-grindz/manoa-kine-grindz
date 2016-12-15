@@ -9,6 +9,9 @@ const vendorSeeds = [
   { name: 'Subway', cuisine: 'Subway Sandwiches', location: "Campus Center" },
   { name: 'Da Grill', cuisine: 'Local Hawaiian', location: "Campus Center" },
   { name: 'Stir Fresh', cuisine: 'Flash Fried', location: "Campus Center" },
+  { name: 'Serges', cuisine: 'Mexican', location: "POST" },
+  { name: 'Bale', cuisine: 'Vietnamese', location: "Hemenway Hall" },
+  { name: 'Gateway Dining', cuisine: 'Varies by Week', location: "Dorms" },
 ];
 
 if (Vendors.find().count() === 0) {

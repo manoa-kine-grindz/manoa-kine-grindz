@@ -13,6 +13,14 @@ body, html {
   width: 100%;
 }
 
+.modal-content {
+  background-color: green;
+  color: white;
+  padding-top: 30%;
+  height: 200px;
+  width: 200px;
+}
+
 div.ui.top.fixed.borderless.inverted.menu {
   font-family: 'Oxygen', sans-serif;
   background-color: silver;

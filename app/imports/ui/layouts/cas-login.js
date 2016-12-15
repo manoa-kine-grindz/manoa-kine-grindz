@@ -27,6 +27,19 @@ Template.Cas_Login.events({
     };
     Meteor.loginWithCas(callback);
     return false;
+  }
+});
+
+Template.ToSModalTemplate.events({
+  'click .cas-login': function casLogin(event, instance) {
+    event.preventDefault();
+    const callback = function loginCallback(error) {
+      if (error) {
+        console.log(error);
+      }
+    };
+    Meteor.loginWithCas(callback);
+    return false;
   },
 });
 

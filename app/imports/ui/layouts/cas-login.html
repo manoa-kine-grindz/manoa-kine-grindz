@@ -7,9 +7,32 @@
       <a class="item" href="{{pathFor 'Profile_Page'}}">My Profile</a>
       <div class="item cas-logout">Logout</div>
       {{else}}
-      <a class="item" href="{{pathFor 'ToS'}}">Login</a>
+      <a class="item cas-login" href="#">Login</a>
       {{/if}}
     </div>
   </div>
 
+</template>
+
+<template name="ToSModalTemplate">
+  <div class="modal fade" id="ToSModal">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h4 class="modal-title">Terms of Service and Use Agreement</h4>
+        </div>
+
+        <div class="modal-body">
+          <p>This application has been developed by students at the University of Hawaii. It is provided on a pilot basis and there are no guarantees regarding future access to this system. All users are expected to adhere to the principles specified in the University of Hawaii Systemwide Student Conduct Code. The developers reserve the right to ban access to this system by any students who violate this code of conduct or otherwise display inappropriate behavior on the site.</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="item cas-login">Agree</button>
+          <button type="button">Disagree</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
 </template>
